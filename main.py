@@ -34,8 +34,8 @@ async def on_ready():
     await bot.load_extension("Cogs.Point")
     await bot.load_extension("Cogs.Other")
 
-    #await bot.tree.sync()
-    #print("グローバルコマンド同期完了！")
+    await bot.tree.sync()
+    print("グローバルコマンド同期完了！")
 
     #await bot.tree.sync(guild=discord.Object(your_guild_id))
     #print("ギルドコマンド同期完了！")
